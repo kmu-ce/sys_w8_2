@@ -7,17 +7,17 @@
 #include <string.h>
 
 void modifyFirstChar(char *str) {
-    printf("modifyFirstChar: sizeof(str) = %lu\n", sizeof(str));
+    printf("modifyFirstChar: sizeof(str) = %zu\n", sizeof(str));
     str[0] = 'h';
 }
 
 int main(int argc, char *argv[]) {
     char str1[] = "Hi!";
 
-    printf("main: sizeof(str1) = %lu\n", sizeof(str1));
+    printf("main: sizeof(str1) = %zu\n", sizeof(str1));
 
     char *str1Ptr = str1;
-    printf("main: sizeof(str1Ptr) = %lu\n", sizeof(str1Ptr));
+    printf("main: sizeof(str1Ptr) = %zu\n", sizeof(str1Ptr));
 
     printf("main (before): str1 = %s\n", str1);
     modifyFirstChar(str1);
