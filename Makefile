@@ -5,7 +5,7 @@ PROGRAMS = verify_password memory
 all:: $(PROGRAMS)
 
 CC = gcc
-CFLAGS = -g3 -O0 -std=gnu99 -fno-stack-protector -Wall $$warnflags
+CFLAGS = -g3 -O0 -std=gnu99 -Wall $$warnflags
 export warnflags = -Wfloat-equal -Wtype-limits -Wpointer-arith -Wlogical-op -Wshadow -Winit-self -fno-diagnostics-show-option
 LDFLAGS =
 LDLIBS =
